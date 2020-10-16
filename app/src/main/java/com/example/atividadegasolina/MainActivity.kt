@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
 
         botao_comparar.setOnClickListener {
             val img_res: ImageView = findViewById<ImageView>(R.id.img_resultado)
-            var valor_etanol:String = text_gasolina.text.toString()
-            var valor_gasosa:String = text_etanol.text.toString()
+            var valor_gasosa:String = text_gasolina.text.toString()
+            var valor_etanol:String = text_etanol.text.toString()
 
             if ((valor_etanol.trim().length>0)&&(valor_gasosa.trim().length>0)){
                 if(valor_etanol.toDouble()<(valor_gasosa.toDouble()*0.7)) {
